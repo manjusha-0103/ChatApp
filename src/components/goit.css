@@ -1,0 +1,13 @@
+.go button{
+    background-color: rgb(218, 232, 244);
+    color: rgb(62, 159, 244);
+    border-radius: 11px;
+    border-color: transparent;
+    width: 65px;
+    height: 30px;
+    font-weight: bold;
+}
+.go button:hover{
+    background-color:rgb(62, 159, 244);
+    color :rgb(191, 220, 246);
+}
