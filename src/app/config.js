@@ -28,7 +28,8 @@ const config = {
 
   customStyles:{
     botMessageBox: {
-      backgroundColor: "#A8C4C4"
+      backgroundColor: "#A8C4C4",
+      marginLeft:'0' 
     },
     chatButton: {
       backgroundColor: "rgb(62, 159, 244)",
@@ -52,6 +53,7 @@ const config = {
       </div>,
   
     botAvatar: () => <Botavatar  />,
+    //botMessageBox : () => </>
   }
 };
 

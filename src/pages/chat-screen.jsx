@@ -8,13 +8,24 @@ import ActionProvider from '../app/ActionProvider.js';
 import './chat-screen.css'
 
 const ChatScreen = () => {
+  //const [showBot, toggleBot] = useState(false);
+
+  const saveMessages = (messages, HTMLString) => {
+    localStorage.setItem('chat_messages', JSON.stringify(messages));
+  };
+
+  const loadMessages = () => {
+    const messages = JSON.parse(localStorage.getItem('chat_messages'));
+    return messages;
+  };
   return (
     <div className='screen'>
       <Chatbot
         config={config}
         messageParser={MessageParser}
         actionProvider={ActionProvider}
-        
+        messageHistory={loadMessages()}
+        saveMessages={saveMessages}
       />
     </div>
   )

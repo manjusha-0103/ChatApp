@@ -1,10 +1,13 @@
 import React from 'react'
 import './goit.css'
+import ActionProvider from '../app/ActionProvider'
 //import ActionProvider from '../app/ActionProvider'
 const Goit =(props) => {
+
+
   return (
     <div className='go'>
-      <button>Got it!</button>
+      <button >Got it!</button>
     </div>
   )
 }
